@@ -9,18 +9,6 @@ This repository provides the code used for the examples in the paper **"Koopman 
 Each example demonstrates how the presented method can be applied to trajectory optimization problems. The repository also includes a visualization for the Compass-Gait Walker in the form of a `.GIF` animation.
 
 ---
-# Koopman Based Trajectory Optimization
-
-This repository provides the code used for the examples in the research paper **"Koopman Based Trajectory Optimization"**. The repository includes three examples of periodic trajectory optimization:
-
-1. **The Harmonic Oscillator**
-2. **The Pendulum**
-3. **The Compass-Gait Walker**
-
-Each example demonstrates how Koopman-based methods can be applied to trajectory optimization problems. The repository also includes a visualization for the Compass-Gait Walker in the form of a `.GIF` animation.
-
----
-
 ## Examples
 
 ### 1. **Harmonic Oscillator**
