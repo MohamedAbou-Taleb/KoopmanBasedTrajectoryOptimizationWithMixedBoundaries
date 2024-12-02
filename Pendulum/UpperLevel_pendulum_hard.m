@@ -78,12 +78,12 @@ dtau = tauspan(2);
 
 % take the EDMD solution as the initial guess
 initial_guess = [reshape(X_EDMD, numel(X_EDMD), []); U_EDMD'; T_EDMD];
-[Z, opt_cost, ~, Output] = fmincon(@(Z) NLP_cost(Z, N_opt, n, dtau), initial_guess, Aineq, bineq, Aeq, beq, lb, ub, ...
+[X_U_T, opt_cost, ~, Output] = fmincon(@(Z) NLP_cost(Z, N_opt, n, dtau), initial_guess, Aineq, bineq, Aeq, beq, lb, ub, ...
     @(Z)NLP_constraint(Z, x0, dtau, @(t, x, u)pendulum_ode(t, x, u, param)), opts);
 
-X_vec = Z(1:n*N_opt);
-U_NLP = Z(n*N_opt+1:end-1);
-T_NLP = Z(end);
+X_vec = X_U_T(1:n*N_opt);
+U_NLP = X_U_T(n*N_opt+1:end-1);
+T_NLP = X_U_T(end);
 
 X_NLP = reshape(X_vec, [n, N_opt]);
 q_NLP = X_NLP(1, :);
