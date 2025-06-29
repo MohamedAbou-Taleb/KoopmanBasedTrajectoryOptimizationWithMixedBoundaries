@@ -1,6 +1,6 @@
 # Koopman Based Trajectory Optimization with Mixed Boundaries
 
-This repository provides the code used for the examples in the paper **"Koopman Based Trajectory Optimization with Mixed Boundaries"** by Mohamed Abou-Taleb, Maximilian Raff, Kathrin Flaßkamp, C. David Remy (https://arxiv.org/abs/2412.03195). The repository includes three examples of periodic trajectory optimization:
+This repository provides the code used for the examples in the paper **"Koopman Based Trajectory Optimization with Mixed Boundaries"** by Mohamed Abou-Taleb, Maximilian Raff, Kathrin Flaßkamp, C. David Remy (https://proceedings.mlr.press/v283/abou-taleb25a.html). The repository includes three examples of periodic trajectory optimization:
 
 1. **The Harmonic Oscillator**
 2. **The Pendulum**
